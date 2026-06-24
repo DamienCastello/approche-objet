@@ -8,4 +8,8 @@ public class Compte {
         this.numeroCompte = numeroCompte;
         this.solde = solde;
     }
+
+    public String toString(){
+        return "numéro de compte: " + this.numeroCompte + "\n" + "solde: " + this.solde;
+    }
 }
