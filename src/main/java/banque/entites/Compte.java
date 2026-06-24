@@ -10,6 +10,6 @@ public class Compte {
     }
 
     public String toString(){
-        return "numéro de compte: " + this.numeroCompte + "\n" + "solde: " + this.solde;
+        return "numéro de compte: " + this.numeroCompte + "\n" + "solde: " + this.solde + "\n";
     }
 }
