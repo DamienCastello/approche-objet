@@ -4,7 +4,7 @@ public class Compte {
     private String numeroCompte;
     private int solde;
 
-    Compte(String numeroCompte, int solde) {
+    public Compte(String numeroCompte, int solde) {
         this.numeroCompte = numeroCompte;
         this.solde = solde;
     }

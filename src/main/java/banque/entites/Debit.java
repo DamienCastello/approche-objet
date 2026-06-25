@@ -1,10 +1,11 @@
 package banque.entites;
 
 public class Debit extends Operation {
-    Debit(String date, int montant){
+    public Debit(String date, int montant){
         super(date, montant);
     }
 
+    @Override
     public String getType(){
         return "DEBIT";
     }

@@ -2,7 +2,7 @@ package banque.entites;
 
 public class CompteTaux extends Compte {
     private double tauxRemuneration;
-    CompteTaux(String numeroCompte, int solde, double tauxRemuneration) {
+    public CompteTaux(String numeroCompte, int solde, double tauxRemuneration) {
         super(numeroCompte, solde);
         this.tauxRemuneration = tauxRemuneration;
 
@@ -16,6 +16,7 @@ public class CompteTaux extends Compte {
         this.tauxRemuneration = tauxRemuneration;
     }
 
+    @Override
     public String toString() {
         return super.toString() + "Taux de rémunération: " + this.tauxRemuneration + "\n";
     }

@@ -4,7 +4,7 @@ abstract class Operation {
     private String date;
     private int montant;
 
-    Operation(String date, int montant){
+    public Operation(String date, int montant){
         this.date = date;
         this.montant = montant;
     }
