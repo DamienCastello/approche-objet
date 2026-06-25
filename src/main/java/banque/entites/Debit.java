@@ -5,7 +5,7 @@ public class Debit extends Operation {
         super(date, montant);
     }
 
-    String getType(){
+    public String getType(){
         return "DEBIT";
     }
 

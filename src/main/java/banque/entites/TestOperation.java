@@ -10,8 +10,8 @@ public class TestOperation {
 
         int montantGlobal = 0;
         for(Operation operation : operations) {
-            if(operation.getType().equals("DEBIT")) montantGlobal -= operation.montant;
-            if(operation.getType().equals("CREDIT")) montantGlobal += operation.montant;
+            if(operation.getType().equals("DEBIT")) montantGlobal -= operation.getMontant();
+            if(operation.getType().equals("CREDIT")) montantGlobal += operation.getMontant();
             System.out.println(operation + "\n");
         }
         System.out.println("Montant global: " + montantGlobal + "\n");

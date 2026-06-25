@@ -1,11 +1,19 @@
 package banque.entites;
 
 public class CompteTaux extends Compte {
-    double tauxRemuneration;
+    private double tauxRemuneration;
     CompteTaux(String numeroCompte, int solde, double tauxRemuneration) {
         super(numeroCompte, solde);
         this.tauxRemuneration = tauxRemuneration;
 
+    }
+
+    public double getTauxRemuneration() {
+        return tauxRemuneration;
+    }
+
+    public void setTauxRemuneration(double tauxRemuneration){
+        this.tauxRemuneration = tauxRemuneration;
     }
 
     public String toString() {

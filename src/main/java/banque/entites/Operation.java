@@ -1,11 +1,27 @@
 package banque.entites;
 
 abstract class Operation {
-    String date;
-    int montant;
+    private String date;
+    private int montant;
 
     Operation(String date, int montant){
         this.date = date;
+        this.montant = montant;
+    }
+
+    public String getDate() {
+        return date;
+    }
+
+    public void setDate(String date) {
+        this.date = date;
+    }
+
+    public int getMontant() {
+        return montant;
+    }
+
+    public void setMontant(int montant) {
         this.montant = montant;
     }
 
