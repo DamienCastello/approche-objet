@@ -1,7 +1,7 @@
 package banque.entites;
 
 public class Compte {
-    private String numeroCompte;
+    private final String numeroCompte;
     private int solde;
 
     public Compte(String numeroCompte, int solde) {
@@ -12,6 +12,7 @@ public class Compte {
     public String getNumeroCompte(){
         return this.numeroCompte;
     }
+
     public int getSolde(){
         return this.solde;
     }
