@@ -2,7 +2,7 @@ package fichier;
 
 import java.util.Objects;
 
-public class Ville {
+public class Ville implements Comparable<Ville> {
     private String nom;
     private String codeDepartement;
     private String NomRegion;
@@ -51,5 +51,17 @@ public class Ville {
                 ", NomRegion='" + NomRegion + '\'' +
                 ", populationTotale=" + populationTotale +
                 '}';
+    }
+
+    @Override
+    public int compareTo(Ville ville) {
+        if(this.populationTotale > 250000){
+            if(this.populationTotale > ville.getPopulationTotale()){
+                return 1;
+            } else if(this.populationTotale < ville.getPopulationTotale()){
+                return -1;
+            }
+        }
+        return 0;
     }
 }
